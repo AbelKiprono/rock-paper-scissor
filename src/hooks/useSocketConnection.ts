@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { io, Socket } from 'socket.io-client';
 
-const SOCKET_URL = 'http://localhost:3001';
+const SOCKET_URL = 'https://render.com/docs/web-services#port-binding';
 
 export const useSocketConnection = () => {
   const [socket, setSocket] = useState<Socket | null>(null);
