@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { io, Socket } from 'socket.io-client';
 
-const SOCKET_URL = 'https://rock-paper-scissor-4x79.onrender.com';
+const SOCKET_URL = 'https://rock-paper-scissor-tknz.onrender.com';
 
 export const useSocketConnection = () => {
   const [socket, setSocket] = useState<Socket | null>(null);

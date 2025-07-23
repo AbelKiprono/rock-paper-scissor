@@ -11,7 +11,7 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://rock-paper-scissor-4x79.onrender.com",
+    origin: "https://rock-paper-scissor-tknz.onrender.com",
     methods: ["GET", "POST"]
   }
 });
