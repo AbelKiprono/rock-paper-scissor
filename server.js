@@ -13,7 +13,7 @@ const server = createServer(app);
 // Socket.io instance with CORS config
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173", // frontend origin
+    origin: "https://rock-paper-scissor-lake-phi.vercel.app/", // frontend origin
     methods: ["GET", "POST"]
   }
 });
@@ -97,7 +97,7 @@ io.on('connection', (socket) => {
   });
 });
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 1000;
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
