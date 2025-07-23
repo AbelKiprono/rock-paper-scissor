@@ -13,7 +13,7 @@ const server = createServer(app);
 // Socket.io instance with CORS config
 const io = new Server(server, {
   cors: {
-    origin: "https://rock-paper-scissor-lake-phi.vercel.app/", // frontend origin
+    origin: "https://rock-paper-scissor-lake-phi.vercel.app", // frontend origin
     methods: ["GET", "POST"]
   }
 });
