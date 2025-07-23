@@ -1,7 +1,4 @@
-import { useState, useEffect } from 'react';
-import { io, Socket } from 'socket.io-client';
-
-const SOCKET_URL = 'https://render.com/docs/web-services#port-binding';
+const SOCKET_URL = 'https://rock-paper-scissor-4x79.onrender.com'; // Example: use your real one
 
 export const useSocketConnection = () => {
   const [socket, setSocket] = useState<Socket | null>(null);
